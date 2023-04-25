@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css" />
     <title>Portfolio</title>
 </head>
 <body>
-    <h1> CONTACT </h1>
+    <header class="background-color header-sec about-header">
+      <h1>CONTACT US</h1>
+      <nav class="nav">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="about.html">About</a></button>
+        <button><a href="projects.html">Projects</a></button>
+        <button><a href="contact.html">Contacts</a></button>
+      </nav>
+    </header>
     <section>
-        <nav class="nav link-style">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contacts</a>
-        </nav>
-      </section>
-</body>
+      <div>
+        <form id="form-container">
+          <input type="text" id="fname" name="fname" value="First Name"><br><br>
+          <input type="text" id="lname" name="lname" value="Last Name"><br><br>
+          <textarea id="contact" name="contact" rows="12" cols="50" placeholder="Message Here"></textarea><br><br>
+          <button id="btn"><a href="mailto:jeremymelix4000@yahoo.com">SUBMIT</a></button>
+        </form>
+        <p id="center">Please message us. We'd love to here from you!</p>
+      </div>
+    </section>
+    <footer class="background-color">
+      <nav class="nav">
+        <button><a href="index.html">Home</a></button>
+      </nav>
+      <p>Copyright Jeremys Portfolio 2023</p>
+      <nav>
+        <a href="https://www.linkedin.com/"><img src="assets/linkedin-logo.png" class="social-media"></a>
+        <a href="https://www.instagram.com/"><img src="assets/logo-ig.png" class="social-media"></a>
+        <a href="https://twitter.com/"><img src="assets/logo-twitter.png" class="social-media"></a>
+      <nav>   
+    </footer>
+    <script>
+      const messageText = document.getElementById('center');
+      const button = document.getElementById('btn');
+      button.addEventListener('click', function() {
+        messageText.innerHTML = "Thank you for getting back to us. Your input is valuable to us!";
+      }, false);
+    </script>
+  </body>
 </html>

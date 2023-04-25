@@ -49,13 +49,13 @@ table {
 
 /* margin for the entire body or page*/
 body {
-  margin: 2.6%; 
+  margin: 0 2.6%; 
 }
 
 /* header */
 header {
-padding: 1.4rem;
-margin-bottom: 15px;
+  padding: 1.4rem;
+  margin-bottom: 15px;
 }
 
 .header-sec {
@@ -91,8 +91,8 @@ margin-bottom: 15px;
 
 /* sizes the top-section images  */
 .box {
-  width: 16rem;
-  height: 16rem;
+  width: 14rem;
+  height: 14rem;
 }
 
 /* center text under top-section images */
@@ -133,6 +133,7 @@ margin-bottom: 15px;
 .nav button:hover {
   background: #000;
   color: #fff;
+  transition: 2s;
 }
 
 /* footer */
@@ -154,8 +155,119 @@ footer {
   background-color: rgb(163, 163, 194);
 }
 
-/* font size for all h2 on page */
+/* font size for all h2 on home page */
 h2 {
   font-size: 2rem;
 }
+
+/* Projects page */
+.project-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 1.4rem;
+}
+
+.project-section h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.project-section p {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1.4rem;
+  column-gap: 2rem;
+}
+
+#align {
+  margin-top: 6rem;
+}
+
+/* About Page */
+.about-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.about-section p {
+  padding: 1rem 10rem;
+}
+
+.about-elements p {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* contact page */
+#form-container {
+  width: 38.6%;
+  height: 50%;
+  padding: 20px 100px;
+  margin: 2rem auto;
+  background-color: rgb(163, 163, 194);
+  border: none;
+}
+
+#form-container input {
+  font-size: 1rem;
+  color: grey;
+  padding: .4rem;
+}
+
+#form-container textarea {
+  font-size: 1rem;
+  padding: .4rem .6rem;
+  color: grey;
+}
+
+#form-container button {
+  
+  padding: .5rem;
+  background: blue; 
+  border: none;
+}
+
+#form-container button a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+#form-container button:hover {
+  background-color: black;
+  transition: 2s;
+}
+
+#center {
+  font-size: 20px;
+  color: grey;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
 
