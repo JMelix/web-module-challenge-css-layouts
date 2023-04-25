@@ -7,41 +7,70 @@
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
-    <header class="header-sec color">
+    <header class="background-color header-sec">
       <h1>Jeremy Melix</h1>
-      <section>
-        <nav class="nav link-style">
-          <a href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contacts</a>
-        </nav>
-      </section>
+      <nav class="nav">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="about.html">About</a></button>
+        <button><a href="projects.html">Projects</a></button>
+        <button><a href="contact.html">Contacts</a></button>
+      </nav>
     </header>
-    <section class="main-section">
-        <!-- Replace with image -->
-        <img src="assets/waterfall.jpg" id="main-pic" />
-        <div class="autobiography">
-            <h2 class="align">Jeremy Melix</h2>
-            <a href="projects.html" class="align">My Projects</a>
-            <p class="align" id="project-para">Alittle bit about myself. Earlier on in my life I joined the United States Marine Corps and served 8 years. I discharged the service honarable at the rank of Sergeant. Shortly after I began a career as a correctional officer for the federal government where I served 15 years. During My time as a correctional officer I attending school at the University of Phoenix for computer networking. It was there where I took my first coding class and fell in love with code. The class involved HTML, CSS, and a bit of javaScript. I am now currently enrolled and attending Bloom Institute of Technology, which has me designing this awesome portfolio site. My goals involve furthering my future by obtaining a career as a full stack web developer!</p>
-        </div>
-      </section>
-    <section>
-    <div class="container">
-      <img src="assets/tree.jpg" alt="image of a tree" class="box" />
-      <img src="assets/mountains.jpg" alt="image of mountains" class="box" />
-      <img src="assets/river.jpg" alt="image of a river flowing through the mountains" class="box" />
-      <img src="assets/cuba.jpg" alt="image of a coffee cup from cuba" class="box" />
-      <img src="assets/bench.jpg" alt="image of an old bench somewhere" class="box" />
-      <img src="assets/city.jpg" alt="image of a city all lit up at night" class="box" />
-      <img src="assets/table.jpg" alt="image of a table in some restaurant" class="box" />
-      <img src="assets/town.jpg" alt="image of an old town" class="box" />
-    <div>
+    <section class="top-section">
+      <img src="assets/waterfall.jpg" id="main-pic" />
+      <div class="description">
+        <h2>Jeremy Melix</h2>
+        <nav class="nav">
+          <button><a href="projects.html">My Projects</a></button>
+        </nav>
+        <p id="main-para">Alittle bit about myself. Earlier on in my life I joined the United States Marine Corps and served 8 years. I discharged the service honarable at the rank of Sergeant. Shortly after I began a career as a correctional officer for the federal government where I served 15 years. During My time as a correctional officer I attending school at the University of Phoenix for computer networking. It was there where I took my first coding class and fell in love with code. The class involved HTML, CSS, and a bit of javaScript. I am now currently enrolled and attending Bloom Institute of Technology, which has me designing this awesome portfolio site. My goals involve furthering my future by obtaining a career as a full stack web developer!</p>
+      </div>
     </section>
-    <footer class="footer-sec color">
-      <p>Like What You See?</p>
-      <button class="link-style footer-nav"><a href="contact.html">Contact Me</a></button>
+    <section>
+    <div class="row">
+      <div class="portfolio-elements">
+        <img src="assets/tree.jpg" alt="image of a tree" class="box" />
+        <p>Tree tops flowering</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/mountains.jpg" alt="image of mountains" class="box" />
+        <p>Mountain scenery</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/river.jpg" alt="image of a river flowing through the mountains" class="box" />
+        <p>Flowing river</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/cuba.jpg" alt="image of a coffee cup from cuba" class="box" />
+        <p>Coffee cup from Cuba</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="portfolio-elements">
+        <img src="assets/bench.jpg" alt="image of an old bench somewhere" class="box" />
+        <p>An old bench</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/city.jpg" alt="image of a city all lit up at night" class="box" />
+        <p>City life</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/table.jpg" alt="image of a table in some restaurant" class="box" />
+        <p>A restaurant table</p>
+      </div>
+      <div class="portfolio-elements">
+        <img src="assets/town.jpg" alt="image of an old town" class="box" />
+        <p>Some old town</p>
+      </div>
+    </div>
+    
+    </section>
+    <footer class="background-color">
+      <h2>Like What You See?</h2>
+      <nav class="nav">
+        <button><a href="contact.html">Contact Me</a></button>
+      </nav>
       <p>Copyright Jeremys Portfolio 2023</p>
       <nav>
         <a href="https://www.linkedin.com/"><img src="assets/linkedin-logo.png" class="social-media"></a>
