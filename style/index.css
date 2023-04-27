@@ -49,10 +49,19 @@ table {
 
 /* margin for the entire body or page*/
 body {
-  margin: 0 2.6%; 
+ margin: 0 2.6%;
 }
 
 /* header */
+* {
+  box-sizing: border-box;
+   /* width: 100%; */
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
 header {
   padding: 1.4rem;
   margin-bottom: 15px;
@@ -68,9 +77,9 @@ header {
 }
 
 .top-section {
-  width: 100%;
+  width:100%;
   height: auto;
-  margin: 2rem;
+  margin: 2rem; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -79,7 +88,7 @@ header {
 
 .top-section #main-pic {
   width: 37rem;
-  height:28rem;
+  height: 28rem;
 }
 
 .row {
@@ -110,6 +119,7 @@ header {
 #main-para {
   font-size: 1.2rem;
   line-height: normal;
+  width: 80%;
 }
 
 /* defines styling rules for all nav tags on the page*/
@@ -121,13 +131,13 @@ header {
   border: none;
   padding: .8rem 1rem;
   background-color: blue;
- 
 }
 
 .nav button a {
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
+ 
 }
 
 .nav button:hover {
@@ -178,21 +188,39 @@ h2 {
   font-size: 3rem;
   text-align: center;
 }
-
+p {
+  font-size: 1.8rem;
+}
 .project-section p {
-  padding: 20px 40px;
+  font-size: 2rem;
+  padding: 2% 4%;
   text-align: center;
+}
+
+.portfolio-elements p {
+  font-size: 2rem;
 }
 
 .project-row {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   padding: 1.4rem;
   column-gap: 2rem;
 }
 
+.project-section div img {
+  width: 100%;
+  height: 80%;
+}
+
+.portfolio-elements img {
+  width: 100%;
+  height: 80%;
+}
+
 #align {
+  font-size: 2rem;
   margin-top: 6rem;
 }
 
@@ -215,17 +243,31 @@ h2 {
   padding: 1rem 10rem;
 }
 
+.row .about-elements {
+  padding: 1%;
+}
+
 .about-elements p {
   text-align: center;
   padding: 1rem;
 }
 
+.about-elements img {
+  width: 100%;
+  height: 80%;
+}
+
+.about-section div img {
+  width: 100%;
+  height: 80%;
+}
+
 /* contact page */
 #form-container {
-  width: 38.6%;
+  width: 40%;
   height: 50%;
-  padding: 20px 100px;
-  margin: 2rem auto;
+  padding: 2% 4%;
+  margin: 2rem 10rem;
   background-color: rgb(163, 163, 194);
   border: none;
 }
@@ -268,6 +310,77 @@ h2 {
   text-align: center;
 }
 
+
+/* Responsive design iphone 12*/
+
+@media only screen and (max-width: 400px) {
+
+  body {
+    margin: 0;
+  }
+
+  .header-sec .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 82.5%; */
+
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+   
+  }
+
+  .top-section #main-pic {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .top-section h2 {
+    text-align: center;
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  #main-para {
+    width: 96%;
+    margin: auto 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 1.4rem; 
+  }
+
+  .portfolio-elements img {
+    height: 50%;
+  }
+
+  .portfolio-elements p {
+    font-size: 0.8rem;
+    padding-bottom: 2%; 
+    text-align: center;
+  }
+
+  .background-color nav {
+    text-align: center;
+  }
+
+  #align {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
 
 
 
