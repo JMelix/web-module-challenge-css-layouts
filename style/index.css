@@ -94,12 +94,17 @@ header {
 .row {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 1.4rem; 
 }
 
+.portfolio-elements {
+  text-align: center;
+}
+
 /* sizes the top-section images  */
-.box {
+.portfolio-elements .box {
   width: 14rem;
   height: 14rem;
 }
