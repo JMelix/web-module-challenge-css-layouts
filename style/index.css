@@ -272,7 +272,7 @@ p {
   width: 40%;
   height: 50%;
   padding: 2% 4%;
-  margin: 2rem 10rem;
+  margin: 0 auto;
   background-color: rgb(163, 163, 194);
   border: none;
 }
