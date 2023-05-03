@@ -55,6 +55,7 @@ body {
 /* header */
 * {
   box-sizing: border-box;
+  border: 1px solid black;
    /* width: 100%; */
 }
 
@@ -76,6 +77,10 @@ header {
   font-size: 2rem;
 }
 
+.description #main-para {
+  font-size: 1.8rem;
+}
+
 .top-section {
   width:100%;
   height: auto;
@@ -87,8 +92,8 @@ header {
 }
 
 .top-section #main-pic {
-  width: 37rem;
-  height: 28rem;
+  width: 40%;;
+  height: 30%;
 }
 
 .row {
@@ -105,8 +110,8 @@ header {
 
 /* sizes the top-section images  */
 .portfolio-elements .box {
-  width: 14rem;
-  height: 14rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 /* center text under top-section images */
@@ -182,6 +187,10 @@ h2 {
   align-items: center;
 }
 
+.project-header h1 {
+  font-size: 2rem;
+}
+
 .project-section {
   display: flex;
   flex-direction: column;
@@ -237,11 +246,14 @@ p {
   align-items: center;
 }
 
+.about-header h1 {
+  font-size: 2rem;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
 }
 
 .about-section p {
@@ -263,7 +275,7 @@ p {
 }
 
 .about-section div img {
-  width: 100%;
+  width: 90%;
   height: 80%;
 }
 
@@ -272,7 +284,7 @@ p {
   width: 40%;
   height: 50%;
   padding: 2% 4%;
-  margin: 2rem 10rem;
+  margin: 0 auto;
   background-color: rgb(163, 163, 194);
   border: none;
 }
@@ -315,11 +327,40 @@ p {
   text-align: center;
 }
 
+/* Responsive design for tablet */
+@media only screen and (max-width: 800px) {
+  .top-section #main-pic {
+    width: 50%;
+    height: 40%;
+  }
+  .description #main-para {
+    font-size: 1rem;
+  }
 
-/* Responsive design iphone 12*/
+  .nav button a {
+    font-size: 1.2rem;
+  }
 
-@media only screen and (max-width: 400px) {
+  /* projects page */
+  .portfolio-elements .box {
+    width: 10rem;
+    height: 10rem;
+  }
 
+  .portfolio-elements p {
+    font-size: 1rem;
+  }
+
+  /* about page */
+  .about-elements img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+/* Responsive design for mobile */
+@media only screen and (max-width: 500px) {
+  /* Home Page */
   body {
     margin: 0;
   }
@@ -328,8 +369,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 82.5%; */
+  }
 
+  .header-sec h1 {
+    text-align: center;
+  }
+
+  .header-sec .nav button {
+    margin: 1% 30%;
   }
 
   .top-section {
@@ -357,6 +404,7 @@ p {
   #main-para {
     width: 96%;
     margin: auto 0;
+    text-align: center;
   }
 
   .row {
@@ -367,8 +415,10 @@ p {
     padding: 1.4rem; 
   }
 
-  .portfolio-elements img {
-    height: 50%;
+  /* projects page*/
+  .portfolio-elements .box {
+    width: 20rem;
+    height: 20rem;
   }
 
   .portfolio-elements p {
@@ -384,6 +434,29 @@ p {
   #align {
     font-size: 0.8rem;
     margin: 0;
+  }
+
+  /* About page */
+  .about-header .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-header .nav button  {
+    margin: 6% 0;
+  }
+
+  .project-header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .project-header .nav button {
+    margin: 2% 0;
+  }
+
+  .project-header .nav button a {
+    padding: 6rem; 
   }
 }
 
